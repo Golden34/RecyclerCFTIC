@@ -2,7 +2,6 @@ package edu.cftic.myrecycler;
 
 public class Libro {
 
-
     private String autor;
     private String titulo;
 

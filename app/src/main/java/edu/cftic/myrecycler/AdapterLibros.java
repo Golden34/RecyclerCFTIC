@@ -9,9 +9,7 @@ import java.util.ArrayList;
 
 public class AdapterLibros extends RecyclerView.Adapter<LibroViewHolder> {
 
-
     private ArrayList<Libro> datos;
-
 
     //Creo la vista, con el Holder dentro
     @Override
@@ -19,9 +17,7 @@ public class AdapterLibros extends RecyclerView.Adapter<LibroViewHolder> {
         LibroViewHolder libroViewHolder = null;
 
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-
         View itemView = inflater.inflate(R.layout.layout_libro_item, parent, false);
-
         libroViewHolder = new LibroViewHolder(itemView);
 
         return libroViewHolder;
@@ -33,7 +29,6 @@ public class AdapterLibros extends RecyclerView.Adapter<LibroViewHolder> {
 
         Libro libro = datos.get(position);
         holder.cargarLibroEnHolder(libro);
-
     }
 
     @Override

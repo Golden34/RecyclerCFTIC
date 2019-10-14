@@ -11,9 +11,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recView;
-
     private ArrayList<Libro> datos;
-
     private AdapterLibros adaptador;
 
     @Override
@@ -33,19 +31,14 @@ public class MainActivity extends AppCompatActivity {
         //recView.setHasFixedSize(true);//opcional, si sé que el tamaño no va a cambiar
 
         adaptador = new AdapterLibros(datos);
-
-
         recView.setAdapter(adaptador);
-
         recView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         //recView.setLayoutManager(new GridLayoutManager(this,3));
         //StaggeredGridLayoutManager para celdas de tamaño variable
         //recView.setLayoutManager(new StaggeredGridLayoutManager());
 
-
         //ITEM DECORATOR --> OPCIONAL
 
-        recView.addItemDecoration(
-                new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        recView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     }
 }

@@ -16,7 +16,6 @@ public class LibroViewHolder extends RecyclerView.ViewHolder {
         text_view_titulo = (TextView)itemView.findViewById(R.id.LblTitulo);
     }
 
-
     public void cargarLibroEnHolder(Libro l) {
         text_view_titulo.setText(l.getTitulo());
         text_view_autor.setText(l.getAutor());
